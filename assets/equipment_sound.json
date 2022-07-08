@@ -1,0 +1,33 @@
+ [
+  
+  
+  {
+        "id" : 1,
+      "name": "ElectroVoice",
+      "type": "Zlx 12p",
+      "image" : "assets/images/sound_equipment/ev_zlx_12p.jpg",
+      "price": 300
+    },
+    {
+        "id" : 2,
+     "name": "Mackie",
+      "type": "Thump 15",
+      "image" : "assets/images/sound_equipment/mackie_15.jpg",
+      "price": 300
+    },
+    {
+        "id" : 3,
+      "name": "Mixer",
+      "type": "allen heath zed 6",
+      "image" : "assets/images/sound_equipment/mixer_zed6.jpg",
+      "price": 200
+    },
+    {
+        "id" : 4,
+      "name": "Microphone",
+      "type": "Wireless",
+      "image" : "assets/images/sound_equipment/microphone.jpg",
+      "price": 250
+    }
+
+  ]
