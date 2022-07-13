@@ -34,10 +34,6 @@ class HomePage extends StatelessWidget {
         scrollDirection: Axis.vertical,
         children: [
           const MainSlideItem(),
-          const SizedBox(height: 20),
-          const SubTitle(
-            subTitle: 'Sound Equipment',
-          ),
           BlocBuilder<EquipmentBloc, EquipmentState>(
             builder: ((context, state) {
               if (state is LoadingEquipmentState) {
@@ -46,34 +42,43 @@ class HomePage extends StatelessWidget {
                 );
               }
               if (state is LoadedEquipmentState) {
-                return Column(children: [
-                  SizedBox(
-                    height: 400,
-                    child: ListView.builder(
-                      padding: const EdgeInsets.all(10),
-                      scrollDirection: Axis.horizontal,
-                      itemCount: state.loadedSoundEquipment.length,
-                      itemBuilder: (context, index) {
-                        return EquipmentItem(
-                          equipment: state.loadedSoundEquipment[index],
-                        );
-                      },
-                    ),
-                  ),
-                  SizedBox(
-                    height: 400,
-                    child: ListView.builder(
-                      padding: const EdgeInsets.all(10),
-                      scrollDirection: Axis.horizontal,
-                      itemCount: state.loadedLightEquipment.length,
-                      itemBuilder: (context, index) {
-                        return EquipmentItem(
-                          equipment: state.loadedLightEquipment[index],
-                        );
-                      },
-                    ),
-                  ),
-                ]);
+                return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 20),
+                      const SubTitle(
+                        subTitle: 'Sound Equipment',
+                      ),
+                      SizedBox(
+                        height: 400,
+                        child: ListView.builder(
+                          padding: const EdgeInsets.all(10),
+                          scrollDirection: Axis.horizontal,
+                          itemCount: state.loadedSoundEquipment.length,
+                          itemBuilder: (context, index) {
+                            return EquipmentItem(
+                              equipment: state.loadedSoundEquipment[index],
+                            );
+                          },
+                        ),
+                      ),
+                      const SubTitle(
+                        subTitle: 'Light Equipment',
+                      ),
+                      SizedBox(
+                        height: 400,
+                        child: ListView.builder(
+                          padding: const EdgeInsets.all(10),
+                          scrollDirection: Axis.horizontal,
+                          itemCount: state.loadedLightEquipment.length,
+                          itemBuilder: (context, index) {
+                            return EquipmentItem(
+                              equipment: state.loadedLightEquipment[index],
+                            );
+                          },
+                        ),
+                      ),
+                    ]);
               }
               if (state is ErrorEquipmentState) {
                 return Center(

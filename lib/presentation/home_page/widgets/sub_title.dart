@@ -10,9 +10,9 @@ class SubTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
+      padding: const EdgeInsets.only(left: 20),
       child: Text(
-        'Sound equipment'.toUpperCase(),
+        subTitle.toUpperCase(),
         style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
     );
