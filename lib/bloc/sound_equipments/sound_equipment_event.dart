@@ -1,32 +1,32 @@
 part of 'sound_equipment_bloc.dart';
 
-abstract class SoundEquipmentEvent extends Equatable {}
+abstract class EquipmentEvent extends Equatable {}
 
-class EmptyList extends SoundEquipmentEvent {
+class EmptyList extends EquipmentEvent {
   @override
   List<Object?> get props => [];
 }
 
-class GetSoundEquipmentData extends SoundEquipmentEvent {
+class GetEquipmentData extends EquipmentEvent {
   final List<EquipmentInfo> equipmentInfo;
 
-  GetSoundEquipmentData({this.equipmentInfo = const <EquipmentInfo>[]});
+  GetEquipmentData({this.equipmentInfo = const <EquipmentInfo>[]});
 
   @override
   List<Object?> get props => [equipmentInfo];
 }
 
-class AddSoundEquipmentItem extends SoundEquipmentEvent {
+class AddEquipmentItem extends EquipmentEvent {
   final EquipmentInfo equipmentInfoItem;
-  AddSoundEquipmentItem({required this.equipmentInfoItem});
+  AddEquipmentItem({required this.equipmentInfoItem});
 
   @override
   List<Object?> get props => [];
 }
 
-class DeleteSoundEquipmentItem extends SoundEquipmentEvent {
+class DeleteEquipmentItem extends EquipmentEvent {
   final EquipmentInfo equipmentInfo;
-  DeleteSoundEquipmentItem({required this.equipmentInfo});
+  DeleteEquipmentItem({required this.equipmentInfo});
   @override
   List<Object?> get props => [];
 }

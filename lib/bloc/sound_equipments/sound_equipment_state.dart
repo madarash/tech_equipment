@@ -1,22 +1,24 @@
 part of 'sound_equipment_bloc.dart';
 
-abstract class SoundEquipmentState extends Equatable {}
+abstract class EquipmentState extends Equatable {}
 
-class InitialSoundEquipmentState extends SoundEquipmentState {
+class InitialEquipmentState extends EquipmentState {
   @override
   List<Object?> get props => [];
 }
 
-class LoadingSoundEquipmentState extends SoundEquipmentState {
+class LoadingEquipmentState extends EquipmentState {
   @override
   List<Object?> get props => [];
 }
 
 // ignore: must_be_immutable
-class LoadedSoundEquipmentState extends SoundEquipmentState {
+class LoadedEquipmentState extends EquipmentState {
   List loadedSoundEquipment;
+  List loadedLightEquipment;
 
-  LoadedSoundEquipmentState({
+  LoadedEquipmentState({
+    required this.loadedLightEquipment,
     required this.loadedSoundEquipment,
   });
 
@@ -25,9 +27,9 @@ class LoadedSoundEquipmentState extends SoundEquipmentState {
 }
 
 // ignore: must_be_immutable
-class ErrorSoundEquipmentState extends SoundEquipmentState {
+class ErrorEquipmentState extends EquipmentState {
   String error;
-  ErrorSoundEquipmentState({required this.error});
+  ErrorEquipmentState({required this.error});
 
   @override
   List<Object?> get props => [error];

@@ -1,0 +1,33 @@
+ [
+  
+  
+  {
+        "id" : 1,
+      "name": "ParLed",
+      "type": "18x15 UV",
+      "image" : "assets/images/light_equipment/18x15uv.jpg",
+      "price": 200
+    },
+    {
+        "id" : 2,
+     "name": "ParLed",
+      "type": "18x15 RGB",
+      "image" : "assets/images/light_equipment/18x15rgb.jpg",
+      "price": 150
+    },
+    {
+        "id" : 3,
+      "name": "Beam",
+      "type": "R17",
+      "image" : "assets/images/light_equipment/beam_r17.jpg",
+      "price": 700
+    },
+    {
+        "id" : 4,
+      "name": "SunLite",
+      "type": "Suite 2",
+      "image" : "assets/images/light_equipment/dmx.jpg",
+      "price": 400
+    }
+
+  ]

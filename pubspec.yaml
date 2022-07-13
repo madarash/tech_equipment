@@ -62,10 +62,15 @@ flutter:
 
   assets:
     - assets/equipment_sound.json
+    - assets/equipment_light.json
     - assets/images/sound_equipment/ev_zlx_12p.jpg
     - assets/images/sound_equipment/mackie_15.jpg
     - assets/images/sound_equipment/microphone.jpg
     - assets/images/sound_equipment/mixer_zed6.jpg
+    - assets/images/light_equipment/18x15rgb.jpg
+    - assets/images/light_equipment/18x15uv.jpg
+    - assets/images/light_equipment/beam_r17.jpg
+    - assets/images/light_equipment/dmx.jpg
     - assets/images/slide_images/1.jpg
     - assets/images/slide_images/2.jpg
     - assets/images/slide_images/3.jpg

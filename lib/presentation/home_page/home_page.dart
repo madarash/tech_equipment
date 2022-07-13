@@ -38,29 +38,44 @@ class HomePage extends StatelessWidget {
           const SubTitle(
             subTitle: 'Sound Equipment',
           ),
-          BlocBuilder<SoundEquipmentBloc, SoundEquipmentState>(
+          BlocBuilder<EquipmentBloc, EquipmentState>(
             builder: ((context, state) {
-              if (state is LoadingSoundEquipmentState) {
+              if (state is LoadingEquipmentState) {
                 return const Center(
                   child: CircularProgressIndicator(),
                 );
               }
-              if (state is LoadedSoundEquipmentState) {
-                return SizedBox(
-                  height: 400,
-                  child: ListView.builder(
-                    padding: const EdgeInsets.all(10),
-                    scrollDirection: Axis.horizontal,
-                    itemCount: state.loadedSoundEquipment.length,
-                    itemBuilder: (context, index) {
-                      return EquipmentItem(
-                        equipment: state.loadedSoundEquipment[index],
-                      );
-                    },
+              if (state is LoadedEquipmentState) {
+                return Column(children: [
+                  SizedBox(
+                    height: 400,
+                    child: ListView.builder(
+                      padding: const EdgeInsets.all(10),
+                      scrollDirection: Axis.horizontal,
+                      itemCount: state.loadedSoundEquipment.length,
+                      itemBuilder: (context, index) {
+                        return EquipmentItem(
+                          equipment: state.loadedSoundEquipment[index],
+                        );
+                      },
+                    ),
                   ),
-                );
+                  SizedBox(
+                    height: 400,
+                    child: ListView.builder(
+                      padding: const EdgeInsets.all(10),
+                      scrollDirection: Axis.horizontal,
+                      itemCount: state.loadedLightEquipment.length,
+                      itemBuilder: (context, index) {
+                        return EquipmentItem(
+                          equipment: state.loadedLightEquipment[index],
+                        );
+                      },
+                    ),
+                  ),
+                ]);
               }
-              if (state is ErrorSoundEquipmentState) {
+              if (state is ErrorEquipmentState) {
                 return Center(
                   child: Padding(
                     padding: const EdgeInsets.all(18.0),
