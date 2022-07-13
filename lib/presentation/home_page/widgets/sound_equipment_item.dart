@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:madrush_tech_support/bloc/cart/cart_bloc.dart';
-import 'package:madrush_tech_support/bloc/sound_equipments/sound_equipment_bloc.dart';
+
 import 'package:madrush_tech_support/model/equipment_info.dart';
 
 class EquipmentItem extends StatelessWidget {
@@ -73,39 +73,63 @@ class EquipmentItem extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 15),
-            BlocBuilder<SoundEquipmentBloc, SoundEquipmentState>(
-              builder: (context, state) {
-                if (state is LoadedSoundEquipmentState) {
-                  return GestureDetector(
-                    onTap: (() => context.read<CartBloc>().add(
-                          CartProductAdded(equipment),
-                        )),
-                    child: Container(
-                      width: MediaQuery.of(context).size.width,
-                      height: 40,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
-                        color: Colors.amber,
-                      ),
-                      child: Center(
-                        child: Text(
-                          'add'.toUpperCase(),
-                          style: const TextStyle(
-                              letterSpacing: 2,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ),
-                  );
-                } else {
-                  return const Text('Error');
-                }
-              },
-            ),
+            GestureDetector(
+              onTap: (() => context.read<CartBloc>().add(
+                    CartProductAdded(equipment),
+                  )),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: 40,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.amber,
+                ),
+                child: Center(
+                  child: Text(
+                    'add'.toUpperCase(),
+                    style: const TextStyle(
+                        letterSpacing: 2,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
+
+
+            // BlocBuilder<SoundEquipmentBloc, SoundEquipmentState>(
+            //   builder: (context, state) {
+            //     if (state is LoadedSoundEquipmentState) {
+            //       return GestureDetector(
+            //         onTap: (() => context.read<CartBloc>().add(
+            //               CartProductAdded(equipment),
+            //             )),
+            //         child: Container(
+            //           width: MediaQuery.of(context).size.width,
+            //           height: 40,
+            //           decoration: BoxDecoration(
+            //             borderRadius: BorderRadius.circular(8),
+            //             color: Colors.amber,
+            //           ),
+            //           child: Center(
+            //             child: Text(
+            //               'add'.toUpperCase(),
+            //               style: const TextStyle(
+            //                   letterSpacing: 2,
+            //                   fontSize: 18,
+            //                   fontWeight: FontWeight.bold),
+            //             ),
+            //           ),
+            //         ),
+            //       );
+            //     } else {
+            //       return const Text('Error');
+            //     }
+            //   },
+            // ),

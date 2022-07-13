@@ -7,6 +7,11 @@ abstract class CartState extends Equatable {
   List<Object> get props => [];
 }
 
+class CartInitial extends CartState {
+  @override
+  List<Object> get props => [];
+}
+
 class CartLoading extends CartState {
   @override
   List<Object> get props => [];
