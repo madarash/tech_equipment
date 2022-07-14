@@ -1,16 +1,21 @@
-# madrush_tech_support
+<h1 align="center">Hi 👋, I'm Sergiy Madarash</h1>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=madarash" alt="madarash" /></a> </p>
 
-A new Flutter project.
+- 🔭 I’m currently working on [MadRush_Tech_Equipment](https://github.com/madarash/tech_equipment)
 
-## Getting Started
+- 🌱 I’m currently learning **Flutter/Bloc/DI**
 
-This project is a starting point for a Flutter application.
+- 📫 How to reach me **madarash.dev@gmail.com**
 
-A few resources to get you started if this is your first Flutter project:
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/sergiy madarash" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sergiy madarash" height="30" width="40" /></a>
+<a href="https://instagram.com/dj_madrush" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="dj_madrush" height="30" width="40" /></a>
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> </p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=madarash&show_icons=true&locale=en&layout=compact" alt="madarash" /></p>
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=madarash&show_icons=true&locale=en" alt="madarash" /></p>
