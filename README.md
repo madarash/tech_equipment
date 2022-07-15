@@ -14,8 +14,8 @@ It is a simple Flutter app to calculate sound & light equipment for rent.
 
 | Light                                      | Dark                                       |
 | ------------------------------------------ | ------------------------------------------ |
-| <img src="screen_shots/1.png" width="400"> | <img src="screen_shots/2.png" width="400"> |
-| <img src="screen_shots/3.png" width="400"> | <img src="screen_shots/4.png" width="400"> |
+| <img src="screen_shots/1.jpg" width="400"> | <img src="screen_shots/2.jpg" width="400"> |
+| <img src="screen_shots/3.jpg" width="400"> | <img src="screen_shots/4.jpg" width="400"> |
 
 ## 🔌 Plugins
 
