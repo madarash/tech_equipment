@@ -1,11 +1,15 @@
-<h1 align="center">Hi 👋, I'm Sergiy Madarash</h1>
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=madarash" alt="madarash" /></a> </p>
+<h1 align="center">Hi 👋, i'm Sergiy Madarash,Trainee Flutter developer</h1>
 
-- 🔭 I’m currently working on [MadRush_Tech_Equipment](https://github.com/madarash/tech_equipment)
 
-- 🌱 I’m currently learning **Flutter/Bloc/DI**
+It is a simple Flutter app to calculate sound & light equipment for rent.
 
-- 📫 How to reach me **madarash.dev@gmail.com**
+## ✨ Features
+
+- [x] Add Equipment to cart.
+- [x] Calculate added equipment for rent.
+- [x] Delete equipment from cart
+
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
